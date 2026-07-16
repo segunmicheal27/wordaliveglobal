@@ -1,0 +1,159 @@
+.sermons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+}
+
+.sermon-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(122,26,93,0.08);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.sermon-card:hover { transform: translateY(-6px); }
+
+.sermon-thumb {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+}
+
+.sermon-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  filter: brightness(0.85);
+}
+
+.sermon-card:hover .sermon-thumb img { transform: scale(1.06); }
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 56px;
+  height: 56px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.sermon-card:hover .play-btn { transform: translate(-50%,-50%) scale(1.12); }
+
+.sermon-body { padding: 22px; }
+
+.sermon-date {
+  font-size: 0.8rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sermon-body h3 { font-size: 1.15rem; margin: 8px 0 4px; }
+.sermon-body p { color: var(--color-text-muted); font-size: 0.9rem; }
+
+/* Video card grid */
+.video-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+.video-card {
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 24px rgba(122,26,93,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(122,26,93,0.18);
+}
+
+.video-card-thumb {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.video-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  filter: brightness(0.8);
+}
+
+.video-card:hover .video-card-thumb img {
+  transform: scale(1.06);
+}
+
+.video-card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(90, 10, 64, 0.45);
+  transition: background 0.3s ease;
+}
+
+.video-card:hover .video-card-overlay {
+  background: rgba(90, 10, 64, 0.65);
+}
+
+.video-play-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover .video-play-icon {
+  transform: scale(1.15);
+}
+
+.watch-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.video-card-info {
+  padding: 18px 20px;
+}
+
+.video-card-info h3 {
+  font-size: 1rem;
+  margin: 6px 0 0;
+  color: var(--color-text-main);
+}

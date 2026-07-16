@@ -1,0 +1,96 @@
+.top-bar {
+  background-color: #5a0a40;
+  color: #ffffff;
+  padding: 8px 0;
+  font-size: 0.85rem;
+  z-index: 1002;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.top-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.top-bar-event {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.event-label {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 0.8rem;
+}
+
+.countdown {
+  display: flex;
+  gap: 12px;
+}
+
+.countdown-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.countdown-item strong {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.countdown-item span {
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  opacity: 0.9;
+}
+
+.top-bar-contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  color: var(--color-accent);
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 992px) {
+  .top-bar-container {
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .top-bar-event {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1150px) {
+  .top-bar {
+    display: none;
+  }
+}
+

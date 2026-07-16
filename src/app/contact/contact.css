@@ -1,0 +1,84 @@
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contact-info h2 { font-size: 2.2rem; margin-bottom: 14px; }
+.contact-info > p { color: var(--color-text-muted); line-height: 1.8; margin-bottom: 32px; }
+
+.info-cards { display: flex; flex-direction: column; gap: 16px; }
+
+.info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(122,26,93,0.07);
+}
+
+.info-icon { font-size: 1.8rem; flex-shrink: 0; margin-top: 2px; }
+
+.info-card h4 { font-size: 1rem; margin-bottom: 4px; }
+.info-card p { color: var(--color-text-muted); font-size: 0.95rem; line-height: 1.6; margin: 0; }
+
+/* Form */
+.contact-form-wrap {
+  background: #fff;
+  border-radius: 24px;
+  padding: 48px 40px;
+  box-shadow: 0 8px 40px rgba(122,26,93,0.1);
+  border-top: 4px solid var(--color-primary);
+}
+
+.contact-form h3 { font-size: 1.8rem; margin-bottom: 28px; }
+
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; }
+
+.form-group label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text-main);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 16px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.3s ease;
+  outline: none;
+  color: var(--color-text-main);
+  background: #fafafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary);
+  background: #fff;
+}
+
+.form-group textarea { resize: vertical; }
+
+.success-msg {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.success-msg h3 { font-size: 1.8rem; margin: 16px 0 10px; }
+.success-msg p { color: var(--color-text-muted); font-size: 1rem; line-height: 1.7; }
+
+@media (max-width: 768px) {
+  .contact-layout { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .contact-form-wrap { padding: 28px 20px; }
+}
