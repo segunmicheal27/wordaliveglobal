@@ -50,7 +50,7 @@ const projects = [
     goal: '₦20,000,000', 
     raised: 28, 
     desc: 'Funding the expansion, venue acquisition, and setups for our newly established branch in Lagos.', 
-    img: '/assets/welcome-to-church.jpg' 
+    img: '/assets/welcome-church.jpg' 
   },
   { 
     title: 'Abuja Branch', 
