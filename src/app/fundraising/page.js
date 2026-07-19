@@ -8,6 +8,29 @@ export const metadata = {
 };
 
 const projects = [
+  // Previous Projects
+  { 
+    title: 'Church Building Project', 
+    goal: '₦50,000,000', 
+    raised: 35, 
+    desc: 'We are building a permanent worship centre in Jos to accommodate our growing congregation and community programs.', 
+    img: '/assets/651705909_1256185556661436_8531847398341812333_n.jpg' 
+  },
+  { 
+    title: 'Outreach & Missions', 
+    goal: '₦10,000,000', 
+    raised: 60, 
+    desc: 'Funding regular community outreaches, feeding programs, and missionary trips across Plateau State and beyond.', 
+    img: '/assets/736562004_1344367244509933_2815077491901948907_n.jpg' 
+  },
+  { 
+    title: 'Media & Technology', 
+    goal: '₦5,000,000', 
+    raised: 72, 
+    desc: 'Upgrading our recording, live-streaming and social media capacity so we can reach more souls online.', 
+    img: '/assets/monthly-banner.jpg' 
+  },
+  // Added Projects
   { 
     title: 'Project Rehoboth Church Building Project', 
     goal: '₦100,000,000', 
