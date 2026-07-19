@@ -61,6 +61,10 @@ ul {
 .text-center { text-align: center; }
 .text-accent { color: var(--color-accent); }
 
+.section-padding {
+  padding: 100px 0;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 28px;
